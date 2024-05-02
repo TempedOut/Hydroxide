@@ -18,7 +18,7 @@ local function hasMethods(methods)
 
     return true
 end
-
+--[[
 local function useMethods(module)
     for name, method in pairs(module) do
         if method then
@@ -26,7 +26,7 @@ local function useMethods(module)
         end
     end
 end
-
+]]--
 if Window and PROTOSMASHER_LOADED then
     getgenv().get_script_function = nil
 end
